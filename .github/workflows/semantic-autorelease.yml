@@ -33,9 +33,6 @@ jobs:
     permissions:
       contents: write
 
-    env:
-      GH_TOKEN: ${{ steps.generate_token.outputs.token }}
-
     steps:
       - name: 'Generate token'
         id: generate_token
@@ -55,4 +52,6 @@ jobs:
         run: npm install -g semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/exec @iwavesmedia/semantic-release-composer
 
       - name: Run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: semantic-release
