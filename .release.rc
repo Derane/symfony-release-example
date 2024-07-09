@@ -4,7 +4,7 @@
             "master"
         ]
     },
-    "repositoryUrl": "https://github.com/GonzaloHirsch/alexa-skill-movie-integrations.git",
+    "repositoryUrl": "https://github.com/Derane/symfony-release-example.git",
     "plugins": [
     "plugins": [
         ["@semantic-release/npm", {
