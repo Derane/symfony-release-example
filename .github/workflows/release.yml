@@ -41,6 +41,8 @@ jobs:
       - name: 'Installing dependencies'
         run: npm ci
 
+      - name: 'audit fix'
+        run: npm audit fix
       - name: 'Verifying the signatures'
         run: npm audit signatures
 
