@@ -42,7 +42,7 @@ jobs:
         run: npm ci
 
       - name: 'audit fix'
-        run: npm audit fix
+        run: npm uninstall nodemon
       - name: 'Verifying the signatures'
         run: npm audit signatures
 
