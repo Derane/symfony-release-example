@@ -4,12 +4,8 @@
             "master"
         ]
     },
-    "repositoryUrl": "https://github.com/Derane/symfony-release-example.git",
+    "repositoryUrl": "https://github.com/GonzaloHirsch/alexa-skill-movie-integrations.git",
     "plugins": [
-    "plugins": [
-        ["@semantic-release/npm", {
-          "npmPublish": false,
-        }],
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
         [
