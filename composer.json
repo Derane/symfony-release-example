@@ -67,5 +67,7 @@
             "allow-contrib": false,
             "require": "6.3.*"
         }
-    }
+    },
+
+    "version": "0.1.1"
 }
