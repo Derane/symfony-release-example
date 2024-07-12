@@ -1,3 +1,4 @@
+
 name: Generate Changelog and Create Release
 
 on:
@@ -6,10 +7,9 @@ on:
       - master
 
 jobs:
-  prepare:
+  build:
     runs-on: ubuntu-latest
-    outputs:
-      github_token: ${{ steps.generate_token.outputs.token }}
+
     steps:
       - name: Generate token
         id: generate_token
@@ -27,7 +27,7 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v5
         with:
           github-token: ${{ steps.generate_token.outputs.token }}
-          output-file: "CHANGELOG.md"
+          output-file: "false"
           version-file: "composer.json"
       - name: Create Release
         uses: actions/create-release@v1
