@@ -1,39 +1,33 @@
-# File: .github/workflows/template-sync.yml
+name: Template Sync
 
 on:
-  # cronjob trigger
   schedule:
-    - cron: "0 0 1 * *"
-  # manual trigger
+    - cron: "0 9 * * MON"
   workflow_dispatch:
-
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
-    # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
-    permissions:
-      contents: write
-      pull-requests: write
 
     steps:
-      - name: Generate token
+      - name: Generate token to read from source repo # see: https://github.com/tibdex/github-app-token
         id: generate_token
-        uses: tibdex/github-app-token@v1
+        # https://github.com/tibdex/github-app-token
+        uses: tibdex/github-app-token@v2
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.RELEASE_SECRET }}
+
       - name: Checkout
+        # https://github.com/actions/checkout#usage
         uses: actions/checkout@v4
         with:
           # submodules: true
-
-          token: ${{ secrets.PAT_SYNC_TOKEN }}
+          token: ${{ steps.generate_token.outputs.token }}
 
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
-        env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         with:
+          github_token: ${{ steps.generate_token.outputs.token }}
           source_repo_path: VilnaCRM-Org/php-service-template
           upstream_branch: main
           pr_labels: template_sync
