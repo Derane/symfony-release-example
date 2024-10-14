@@ -16,17 +16,24 @@ jobs:
       pull-requests: write
 
     steps:
-      # To use this repository's private action, you must check out the repository
+      - name: Generate token
+        id: generate_token
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.RELEASE_SECRET }}
       - name: Checkout
         uses: actions/checkout@v4
         with:
           # submodules: true
+
           token: ${{ secrets.PAT_SYNC_TOKEN }}
 
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
+        env:
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         with:
-          github_token: ${{ secrets.REPO_GITHUB_TOKEN }}
           source_repo_path: VilnaCRM-Org/php-service-template
           upstream_branch: main
           pr_labels: template_sync
