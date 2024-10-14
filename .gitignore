@@ -1,13 +1,6 @@
-### macOS ###
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
-
-### PhpStorm ###
-.idea
-
 ###> symfony/framework-bundle ###
+/.idea
+/.env
 /.env.local
 /.env.local.php
 /.env.*.local
@@ -17,4 +10,25 @@
 /vendor/
 ###< symfony/framework-bundle ###
 
-### Docker ###
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###
+
+###> friends-of-behat/symfony-extension ###
+/behat.yml
+###< friends-of-behat/symfony-extension ###
+
+###> squizlabs/php_codesniffer ###
+/.phpcs-cache
+/phpcs.xml
+###< squizlabs/php_codesniffer ###
+
+###> qossmic/deptrac-shim ###
+/.deptrac.cache
+###< qossmic/deptrac-shim ###
