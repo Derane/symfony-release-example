@@ -1,3 +1,12 @@
+## [0.1.11](https://github.com/Derane/symfony-release-example/compare/v0.1.10...v0.1.11) (2024-10-14)
+
+
+### Bug Fixes
+
+* **#1:** add ([abd8a15](https://github.com/Derane/symfony-release-example/commit/abd8a1563188e77736da8b7b01a1787e2ea9fae9)), closes [#1](https://github.com/Derane/symfony-release-example/issues/1)
+
+
+
 ## [0.1.10](https://github.com/Derane/symfony-release-example/compare/v0.1.9...v0.1.10) (2024-10-14)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * **#1:** fix changelog ([5ec4b6e](https://github.com/Derane/symfony-release-example/commit/5ec4b6e60e05ed3b215ac11400e780ced6465cf4))
-
-
-
-## [0.1.6](https://github.com/Derane/symfony-release-example/compare/v0.1.5...v0.1.6) (2024-07-12)
-
-
-### Bug Fixes
-
-* **#1:** new feature ([a0490d8](https://github.com/Derane/symfony-release-example/commit/a0490d8c7b288574410f8e2380cc7c82d07388bd)), closes [#1](https://github.com/Derane/symfony-release-example/issues/1)
 
 
 
