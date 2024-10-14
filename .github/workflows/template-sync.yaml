@@ -1,3 +1,9 @@
+name: Template Sync
+
+on:
+  schedule:
+    - cron: "0 9 * * MON"
+  workflow_dispatch:
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
