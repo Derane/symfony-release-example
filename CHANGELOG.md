@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/Derane/symfony-release-example/compare/v1.0.0...v2.0.0) (2024-11-25)
+
+
+### Bug Fixes
+
+* **#85:** update dependencies ([9b18376](https://github.com/Derane/symfony-release-example/commit/9b1837645663620087ba810f18730b86cd942fa9)), closes [#85](https://github.com/Derane/symfony-release-example/issues/85)
+
+
+### BREAKING CHANGES
+
+* **#85:** remove 'category' key from graphql response
+
+
+
 # [1.0.0](https://github.com/Derane/symfony-release-example/compare/v0.2.0...v1.0.0) (2024-11-25)
 
 
@@ -40,15 +54,6 @@
 ### Bug Fixes
 
 * **#1:** add ([ed9defc](https://github.com/Derane/symfony-release-example/commit/ed9defc816df9a65f004b1a164b960871f6d4632)), closes [#1](https://github.com/Derane/symfony-release-example/issues/1)
-
-
-
-## [0.1.11](https://github.com/Derane/symfony-release-example/compare/v0.1.10...v0.1.11) (2024-10-14)
-
-
-### Bug Fixes
-
-* **#1:** add ([abd8a15](https://github.com/Derane/symfony-release-example/commit/abd8a1563188e77736da8b7b01a1787e2ea9fae9)), closes [#1](https://github.com/Derane/symfony-release-example/issues/1)
 
 
 
