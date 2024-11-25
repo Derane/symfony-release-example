@@ -1,3 +1,21 @@
+# [1.0.0](https://github.com/Derane/symfony-release-example/compare/v0.2.0...v1.0.0) (2024-11-25)
+
+
+### Features
+
+* **#4:** init project ([5349be1](https://github.com/Derane/symfony-release-example/commit/5349be1f995603f1197a9e20eca7ab00d96a139b)), closes [#4](https://github.com/Derane/symfony-release-example/issues/4)
+* **#4:** init project ([25f7e0c](https://github.com/Derane/symfony-release-example/commit/25f7e0ce8d21391a662ff1373f64f542cbf611f2)), closes [#4](https://github.com/Derane/symfony-release-example/issues/4)
+* **#4:** init project ([6d57644](https://github.com/Derane/symfony-release-example/commit/6d57644d631e372046fe7a37cfaebb134d27cc89)), closes [#4](https://github.com/Derane/symfony-release-example/issues/4)
+
+
+### BREAKING CHANGES
+
+* **#4:** update dependencies
+* **#4:** update dependencies
+* **#4:** update dependencies
+
+
+
 # [0.2.0](https://github.com/Derane/symfony-release-example/compare/v0.1.13...v0.2.0) (2024-11-25)
 
 
@@ -31,15 +49,6 @@
 ### Bug Fixes
 
 * **#1:** add ([abd8a15](https://github.com/Derane/symfony-release-example/commit/abd8a1563188e77736da8b7b01a1787e2ea9fae9)), closes [#1](https://github.com/Derane/symfony-release-example/issues/1)
-
-
-
-## [0.1.10](https://github.com/Derane/symfony-release-example/compare/v0.1.9...v0.1.10) (2024-10-14)
-
-
-### Bug Fixes
-
-* **#1:** add ([a4f1e1f](https://github.com/Derane/symfony-release-example/commit/a4f1e1fbe792ff600f09f44dffc270f34c942a00)), closes [#1](https://github.com/Derane/symfony-release-example/issues/1)
 
 
 
