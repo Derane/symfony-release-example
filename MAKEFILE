@@ -1,4 +1,4 @@
-make up:
+up:
 	docker compose up -d
-make down:
+down:
 	docker compose down
