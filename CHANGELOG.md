@@ -1,3 +1,12 @@
+# [3.2.0](https://github.com/Derane/symfony-release-example/compare/v3.1.0...v3.2.0) (2024-12-02)
+
+
+### Features
+
+* **#85:** fix issues ([c99d06d](https://github.com/Derane/symfony-release-example/commit/c99d06dfb98c7515bc0cf31b4d6a2d6f800eb300))
+
+
+
 # [3.1.0](https://github.com/Derane/symfony-release-example/compare/v3.0.0...v3.1.0) (2024-11-29)
 
 
@@ -50,15 +59,6 @@
 * **#4:** update dependencies
 * **#4:** update dependencies
 * **#4:** update dependencies
-
-
-
-# [0.2.0](https://github.com/Derane/symfony-release-example/compare/v0.1.13...v0.2.0) (2024-11-25)
-
-
-### Features
-
-* **#4:** init project ([ab07bcb](https://github.com/Derane/symfony-release-example/commit/ab07bcb659426e1ce0b6070b660898d0c870e732)), closes [#4](https://github.com/Derane/symfony-release-example/issues/4)
 
 
 
