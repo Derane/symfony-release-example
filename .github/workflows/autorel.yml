@@ -3,7 +3,7 @@ name: Generate Changelog and Create Release
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -14,32 +14,20 @@ jobs:
         id: generate_token
         uses: tibdex/github-app-token@v1
         with:
-          app_id: ${{ secrets.VILNACRM_APP_ID }}
-          private_key: ${{ secrets.VILNACRM_APP_PRIVATE_KEY }}
-
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.RELEASE_SECRET }}
       - name: Checkout code
         uses: actions/checkout@v2
         with:
           token: ${{ steps.generate_token.outputs.token }}
-
-      - name: Import GPG key
-        run: |
-          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
-
-      - name: Set up Git for signing commits
-        run: |
-          git config --global user.email "your-email@example.com" # Замените на ваш email
-          git config --global user.name "Your Name" # Замените на ваше имя
-          git config --global user.signingkey ${{ secrets.GPG_KEY_ID }}
-          git config --global commit.gpgSign true
 
       - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v5
         with:
           github-token: ${{ steps.generate_token.outputs.token }}
-          output-file: 'CHANGELOG.md'
-          version-file: 'composer.json'
+          output-file: "CHANGELOG.md"
+          version-file: "composer.json"
 
       - name: Create Release
         uses: actions/create-release@v1
@@ -50,12 +38,3 @@ jobs:
           tag_name: ${{ steps.changelog.outputs.tag }}
           release_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
-
-      - name: Commit changes
-        run: |
-          git add .
-          git commit -m "chore(release): v0.1.0 [skip ci]"
-          git push origin main --follow-tags
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
