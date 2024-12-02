@@ -1,3 +1,13 @@
+# [3.3.0](https://github.com/Derane/symfony-release-example/compare/v3.2.0...v3.3.0) (2024-12-02)
+
+
+### Features
+
+* **#85:** fix issues ([7ee2c18](https://github.com/Derane/symfony-release-example/commit/7ee2c1882e0a8b6e02e2b19a641a85d2d236414b))
+* **#85:** fix issues ([adbfa07](https://github.com/Derane/symfony-release-example/commit/adbfa07d06f0362c85d7022683f414540e5d136a))
+
+
+
 # [3.2.0](https://github.com/Derane/symfony-release-example/compare/v3.1.0...v3.2.0) (2024-12-02)
 
 
@@ -41,24 +51,6 @@
 ### BREAKING CHANGES
 
 * **#85:** remove 'category' key from graphql response
-
-
-
-# [1.0.0](https://github.com/Derane/symfony-release-example/compare/v0.2.0...v1.0.0) (2024-11-25)
-
-
-### Features
-
-* **#4:** init project ([5349be1](https://github.com/Derane/symfony-release-example/commit/5349be1f995603f1197a9e20eca7ab00d96a139b)), closes [#4](https://github.com/Derane/symfony-release-example/issues/4)
-* **#4:** init project ([25f7e0c](https://github.com/Derane/symfony-release-example/commit/25f7e0ce8d21391a662ff1373f64f542cbf611f2)), closes [#4](https://github.com/Derane/symfony-release-example/issues/4)
-* **#4:** init project ([6d57644](https://github.com/Derane/symfony-release-example/commit/6d57644d631e372046fe7a37cfaebb134d27cc89)), closes [#4](https://github.com/Derane/symfony-release-example/issues/4)
-
-
-### BREAKING CHANGES
-
-* **#4:** update dependencies
-* **#4:** update dependencies
-* **#4:** update dependencies
 
 
 
