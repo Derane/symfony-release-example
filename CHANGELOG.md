@@ -1,3 +1,12 @@
+# [3.4.0](https://github.com/Derane/symfony-release-example/compare/v3.3.0...v3.4.0) (2025-02-11)
+
+
+### Features
+
+* **#3:** add codelint ([35c48cc](https://github.com/Derane/symfony-release-example/commit/35c48cc9749d0c6f87e59e3105381a707d01fbb2)), closes [#3](https://github.com/Derane/symfony-release-example/issues/3)
+
+
+
 # [3.3.0](https://github.com/Derane/symfony-release-example/compare/v3.2.0...v3.3.0) (2024-12-02)
 
 
@@ -32,20 +41,6 @@
 ### Features
 
 * **#85:** update dependencies ([c0d599c](https://github.com/Derane/symfony-release-example/commit/c0d599cd21a347efeffd1ceea2c69c8294307a45)), closes [#85](https://github.com/Derane/symfony-release-example/issues/85)
-
-
-### BREAKING CHANGES
-
-* **#85:** remove 'category' key from graphql response
-
-
-
-# [2.0.0](https://github.com/Derane/symfony-release-example/compare/v1.0.0...v2.0.0) (2024-11-25)
-
-
-### Bug Fixes
-
-* **#85:** update dependencies ([9b18376](https://github.com/Derane/symfony-release-example/commit/9b1837645663620087ba810f18730b86cd942fa9)), closes [#85](https://github.com/Derane/symfony-release-example/issues/85)
 
 
 ### BREAKING CHANGES
