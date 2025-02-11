@@ -6,7 +6,7 @@ on:
     - cron: "0 0 1 * *"
   # manual trigger
   workflow_dispatch:
-jobs:
+jobss
   repo-sync:
     runs-on: ubuntu-latest
     # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
