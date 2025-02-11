@@ -2,10 +2,10 @@
 
 on:
   # cronjob trigger
-  schedule:
-    - cron: "0 0 1 * *"
+    schedule:
+      - cron: "0 0 1 * *"
   # manual trigger
-  workflow_dispatch:
+    workflow_dispatch:
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
